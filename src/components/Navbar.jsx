@@ -1,6 +1,9 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+    const location = useLocation();
+    const isHomePage = location.pathname === "/";
+
     const navlinks = (
         <>
             <NavLink
@@ -46,8 +49,12 @@ const Navbar = () => {
         </>
     );
     return (
-        <div className="bg-white">
-            <div className="navbar max-w-screen-xl mx-auto py-4 px-0">
+        <div
+            className={`${
+                isHomePage ? "absolute top-0 left-0 w-full z-10 bg-black/15" : "relative"
+            }`}
+        >
+            <div className="navbar max-w-screen-xl mx-auto py-4 px-0 text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div
@@ -97,7 +104,7 @@ const Navbar = () => {
                         {navlinks}
                     </ul>
 
-                    <button className="btn btn-circle bg-white">
+                    <button className="btn btn-circle bg-white/70">
                         <NavLink
                             to="/carts"
                             className={({ isActive }) =>
@@ -124,7 +131,7 @@ const Navbar = () => {
                             </svg>
                         </NavLink>
                     </button>
-                    <button className="btn btn-circle bg-white">
+                    <button className="btn btn-circle bg-white/70">
                         <NavLink
                             to="/wishlist"
                             className={({ isActive }) =>

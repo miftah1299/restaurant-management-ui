@@ -32,7 +32,7 @@ const Slider = () => {
                 navigation={true}
                 thumbs={{ swiper: thumbsSwiper }}
                 modules={[FreeMode, Navigation, Thumbs]}
-                className="mySwiper2 w-full h-[60vh]"
+                className="mySwiper2 w-full h-[70vh]"
             >
                 <SwiperSlide>
                     <img className="w-full h-full object-cover" src={img1} />
