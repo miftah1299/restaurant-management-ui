@@ -28,18 +28,33 @@ const ProductSlider = () => {
             >
                 <SwiperSlide>
                     <img className="w-full h-full object-cover" src={prod1} />
+                    <h3 className="text-center text-xl font-semibold text-white -top-10 relative">
+                        Salad
+                    </h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className="w-full h-full object-cover" src={prod2} />
+                    <h3 className="text-center text-xl font-semibold text-white -top-10 relative">
+                        Pizza
+                    </h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className="w-full h-full object-cover" src={prod3} />
+                    <h3 className="text-center text-xl font-semibold text-white -top-10 relative">
+                        Soup
+                    </h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className="w-full h-full object-cover" src={prod4} />
+                    <h3 className="text-center text-xl font-semibold text-white -top-10 relative">
+                        Dessert
+                    </h3>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img className="w-full h-full object-cover" src={prod5} />
+                    <h3 className="text-center text-xl font-semibold text-white -top-10 relative">
+                        Salad
+                    </h3>
                 </SwiperSlide>
             </Swiper>
         </>
