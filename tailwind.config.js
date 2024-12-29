@@ -6,8 +6,11 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: '#D99904',
-                secondary: '#EEFF25',
+                primary: "#D99904",
+                secondary: "#EEFF25",
+            },
+            fontFamily: {
+                montserrat: ["Montserrat", "sans-serif"],
             },
         },
     },
