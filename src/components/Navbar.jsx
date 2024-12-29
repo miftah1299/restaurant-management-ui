@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const links = (
+    const navlinks = (
         <>
             <NavLink
                 to="/"
@@ -10,6 +10,38 @@ const Navbar = () => {
                 }
             >
                 Home
+            </NavLink>
+            <NavLink
+                to="/"
+                className={({ isActive }) =>
+                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                }
+            >
+                Contact Us
+            </NavLink>
+            <NavLink
+                to="/"
+                className={({ isActive }) =>
+                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                }
+            >
+                Dashboard
+            </NavLink>
+            <NavLink
+                to="/"
+                className={({ isActive }) =>
+                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                }
+            >
+                Our Menu
+            </NavLink>
+            <NavLink
+                to="/"
+                className={({ isActive }) =>
+                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                }
+            >
+                Our Shop
             </NavLink>
         </>
     );
@@ -42,22 +74,29 @@ const Navbar = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                         >
-                            {links}
+                            {navlinks}
                         </ul>
                     </div>
 
-                    <NavLink className="btn btn-ghost hover:bg-transparent text-xl p-0">
+                    <NavLink
+                        to="/"
+                        className="hover:bg-transparent text-3xl font-bold"
+                    >
                         BistroHub
                     </NavLink>
                 </div>
 
-                <div className="navbar-center hidden lg:flex">
+                {/* <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 font-medium">
-                        {links}
+                        {navlinks}
                     </ul>
-                </div>
+                </div> */}
 
                 <div className="navbar-end flex gap-4">
+                    <ul className="menu menu-horizontal px-1 font-medium">
+                        {navlinks}
+                    </ul>
+
                     <button className="btn btn-circle bg-white">
                         <NavLink
                             to="/carts"

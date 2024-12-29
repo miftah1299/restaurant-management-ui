@@ -1,13 +1,13 @@
 const Footer = () => {
     return (
-        <footer className="footer bg-gray-50 flex flex-col items-center py-24">
+        <footer className="footer bg-gray-50 flex flex-col items-center pt-12 pb-4">
             <div className="flex flex-col items-center">
-                <h1 className="text-4xl font-bold text-black">BistroHub</h1>
+                <h1 className="text-3xl font-bold text-black">BistroHub</h1>
                 <p className="text-black/50">
                     The best place to find your favorite foods and drinks
                 </p>
             </div>
-            <hr className="w-full" />
+            <hr className="w-11/12" />
 
             <div className="flex gap-40 text-center text-black/50">
                 <nav className="flex flex-col space-y-2">
@@ -30,6 +30,10 @@ const Footer = () => {
                     <a className="link link-hover">Cookie policy</a>
                 </nav>
             </div>
+            <p className="text-black/50">
+                &copy; {new Date().getFullYear()} BistroHub. All rights
+                reserved.
+            </p>
         </footer>
     );
 };
