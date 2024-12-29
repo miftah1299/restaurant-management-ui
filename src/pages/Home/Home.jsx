@@ -1,9 +1,12 @@
-import Slider from "../components/Slider";
+import Slider from "../../components/slider/Slider";
+import Products from "./Products";
+
 
 const Home = () => {
     return (
         <div>
             <Slider />
+            <Products />
         </div>
     );
 };
