@@ -2,6 +2,7 @@ import Slider from "../../components/slider/Slider";
 import FeaturedDishes from "./FeaturedDishes";
 import PopularItems from "./PopularItems";
 import Products from "./Products";
+import Testimonials from "./Testimonials";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Products />
             <PopularItems />
             <FeaturedDishes />
+            <Testimonials />
         </div>
     );
 };
