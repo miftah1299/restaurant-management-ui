@@ -9,39 +9,59 @@ const Navbar = () => {
             <NavLink
                 to="/"
                 className={({ isActive }) =>
-                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                    `tab ${
+                        isActive
+                            ? "text-secondary"
+                            : "text-white hover:text-secondary"
+                    }`
                 }
             >
                 Home
             </NavLink>
             <NavLink
-                to="/"
+                to="/contact"
                 className={({ isActive }) =>
-                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                    `tab ${
+                        isActive
+                            ? "text-secondary"
+                            : "text-white hover:text-secondary"
+                    }`
                 }
             >
                 Contact Us
             </NavLink>
             <NavLink
-                to="/"
+                to="/dashboard"
                 className={({ isActive }) =>
-                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                    `tab ${
+                        isActive
+                            ? "text-secondary"
+                            : "text-white hover:text-secondary"
+                    }`
                 }
             >
                 Dashboard
             </NavLink>
             <NavLink
-                to="/"
+                to="/menu"
                 className={({ isActive }) =>
-                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                    `tab ${
+                        isActive
+                            ? "text-secondary"
+                            : "text-white hover:text-secondary"
+                    }`
                 }
             >
                 Our Menu
             </NavLink>
             <NavLink
-                to="/"
+                to="/shop"
                 className={({ isActive }) =>
-                    `tab ${isActive ? "text-primary" : "hover:text-primary"}`
+                    `tab ${
+                        isActive
+                            ? "text-secondary"
+                            : "text-white hover:text-secondary"
+                    }`
                 }
             >
                 Our Shop
@@ -51,7 +71,9 @@ const Navbar = () => {
     return (
         <div
             className={`${
-                isHomePage ? "absolute top-0 left-0 w-full z-10 bg-black/15" : "relative"
+                isHomePage
+                    ? "absolute top-0 left-0 w-full z-10 bg-black/15"
+                    : "relative"
             }`}
         >
             <div className="navbar max-w-screen-xl mx-auto py-4 px-0 text-white">
@@ -79,7 +101,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                            className="menu menu-sm dropdown-content bg-black/15 rounded-box z-[1] mt-3 w-52 p-2 shadow font-medium"
                         >
                             {navlinks}
                         </ul>
@@ -100,7 +122,7 @@ const Navbar = () => {
                 </div> */}
 
                 <div className="navbar-end flex gap-4">
-                    <ul className="menu menu-horizontal px-1 font-medium">
+                    <ul className="menu menu-horizontal px-1 font-medium hidden lg:flex">
                         {navlinks}
                     </ul>
 
