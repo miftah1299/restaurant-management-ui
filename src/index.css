@@ -8,3 +8,7 @@ html {
     overflow-y: scroll;
     font-family: montserrat;
 }
+
+.parallax {
+    background-attachment: fixed;
+}

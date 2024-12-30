@@ -5,7 +5,7 @@ const PrimaryButton = ({ btnText, onClick = () => {} }) => {
         <div className="flex justify-center mt-10">
             <button
                 onClick={onClick}
-                className="border-b-2 border-black rounded-r rounded-l py-2 px-4 uppercase font-semibold"
+                className="border-b-4 border-black rounded-r-lg rounded-l-lg py-2 px-4 uppercase font-semibold"
             >
                 {btnText}
             </button>

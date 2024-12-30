@@ -1,26 +1,17 @@
 import Heading from "../../components/Heading";
-import featuredimg from "../../assets/home/featured.jpg";
 
 const FeaturedDishes = () => {
     return (
-        <div
-            className="max-w-screen-xl mx-auto text-white bg-cover bg-center"
-            style={{ backgroundImage: `url(${featuredimg})` }}
-        >
-            <div className="relative w-full z-10 bg-black/30 p-10">
+        <div className="max-w-screen-2xl mx-auto text-white bg-featured bg-cover bg-center my-10 parallax">
+            <div className="relative w-full z-10 bg-black/45 py-12 px-28">
                 <Heading
                     title="Featured Dishes"
                     subtitle="Taste the best of the best"
                 />
 
                 <div className="flex gap-6 items-center">
-                    <div className="flex-1">
-                        <img
-                            src={featuredimg}
-                            alt="featured"
-                            className="rounded-lg"
-                        />
-                    </div>
+                    <div className="flex-1 bg-featured bg-cover bg-center h-96 rounded-lg"></div>
+
                     <div className="flex-1 flex flex-col items-start gap-2">
                         <p>
                             {new Date().toLocaleDateString("en-US", {
@@ -41,7 +32,7 @@ const FeaturedDishes = () => {
                         </p>
 
                         <div className="flex justify-center mt-6">
-                            <button className="border-b-2 border-white rounded-r rounded-l py-2 px-4 uppercase font-semibold">
+                            <button className="border-b-4 border-white rounded-r-lg rounded-l-lg py-2 px-4 uppercase font-semibold">
                                 read more
                             </button>
                         </div>

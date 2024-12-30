@@ -12,6 +12,9 @@ export default {
             fontFamily: {
                 montserrat: ["Montserrat", "sans-serif"],
             },
+            backgroundImage: {
+                featured: 'url("./src/assets/home/featured.jpg")',
+            },
         },
     },
     plugins: [daisyui],
