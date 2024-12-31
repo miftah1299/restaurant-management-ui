@@ -69,13 +69,15 @@ const Navbar = () => {
         </>
     );
     return (
-        <div
-            className={`${
-                isHomePage
-                    ? "absolute top-0 left-0 w-full z-10 bg-black/15"
-                    : "relative"
-            }`}
-        >
+        //* dynamic navbar
+        // <div
+        //     className={`${
+        //         isHomePage
+        //             ? "absolute top-0 left-0 w-full z-10 bg-black/15"
+        //             : "relative"
+        //     }`}
+        // >
+        <div className="fixed z-10 bg-black/15 w-full">
             <div className="navbar max-w-screen-xl mx-auto py-4 px-0 text-white">
                 <div className="navbar-start">
                     <div className="dropdown">
