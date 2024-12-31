@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Heading from "../../components/Heading";
+import SectionTitle from "../../components/SectionTitle";
 import ItemCard from "../../components/ItemCard";
-import PrimaryButton from "../../components/PrimaryButton";
+import CustomButton from "../../components/CustomButton";
 
 const PopularItems = () => {
     const [menu, setMenu] = useState([]);
@@ -19,7 +19,7 @@ const PopularItems = () => {
 
     return (
         <div className="max-w-screen-xl mx-auto py-10">
-            <Heading
+            <SectionTitle
                 title="Popular Items"
                 subtitle={"Most loved in the town"}
             />
@@ -30,7 +30,7 @@ const PopularItems = () => {
                 ))}
             </div>
 
-            <PrimaryButton btnText="View Full Menu" />
+            <CustomButton btnText="View Full Menu" />
         </div>
     );
 };

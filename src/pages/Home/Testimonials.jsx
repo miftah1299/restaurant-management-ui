@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import Heading from "../../components/Heading";
+import SectionTitle from "../../components/SectionTitle";
 import { Rating } from "@smastrom/react-rating";
 import "@smastrom/react-rating/style.css";
 import { FaQuoteLeft } from "react-icons/fa";
@@ -26,7 +26,7 @@ const Testimonials = () => {
 
     return (
         <div className="max-w-screen-xl mx-auto py-10">
-            <Heading subtitle="What our customers say" title="Testimonials" />
+            <SectionTitle subtitle="What our customers say" title="Testimonials" />
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

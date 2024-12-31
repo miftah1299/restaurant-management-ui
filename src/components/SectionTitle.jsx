@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Heading = ({ title, subtitle }) => {
+const SectionTitle = ({ title, subtitle }) => {
     return (
         <div className="text-center py-10">
             <h5 className="text-xl text-primary capitalize pb-2">
@@ -13,8 +13,8 @@ const Heading = ({ title, subtitle }) => {
     );
 };
 
-Heading.propTypes = {
+SectionTitle.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
 };
-export default Heading;
+export default SectionTitle;

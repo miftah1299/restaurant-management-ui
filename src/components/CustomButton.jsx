@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const PrimaryButton = ({ btnText, onClick = () => {} }) => {
+const CustomButton = ({ btnText, onClick = () => {} }) => {
     return (
         <div className="flex justify-center mt-10">
             <button
@@ -13,9 +13,9 @@ const PrimaryButton = ({ btnText, onClick = () => {} }) => {
     );
 };
 
-PrimaryButton.propTypes = {
+CustomButton.propTypes = {
     btnText: PropTypes.string.isRequired,
     onClick: PropTypes.func,
 };
 
-export default PrimaryButton;
+export default CustomButton;

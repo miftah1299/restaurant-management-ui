@@ -1,10 +1,10 @@
-import Heading from "../../components/Heading";
+import SectionTitle from "../../components/SectionTitle";
 
 const FeaturedDishes = () => {
     return (
         <div className="max-w-screen-2xl mx-auto text-white bg-featured bg-cover bg-center my-10 parallax">
             <div className="relative w-full z-10 bg-black/45 py-12 px-28">
-                <Heading
+                <SectionTitle
                     title="Featured Dishes"
                     subtitle="Taste the best of the best"
                 />
